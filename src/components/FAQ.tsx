@@ -13,60 +13,51 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "¿Qué ofrece Hindra en su MVP?",
+    answer:
+      "Hindra ofrece una plataforma inicial que ayuda a gestionar ranchos ganaderos y agrícolas, proporcionando dashboards básicos y métricas clave para mejorar la producción. También ofrece soporte básico mediante IA y acceso a servicios exclusivos dentro de la aplicación.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    question: "¿Cuáles son los planes futuros de Hindra?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Estamos comprometidos a expandir nuestras funcionalidades a medida que crecemos, agregando herramientas avanzadas de IA, machine learning y análisis de datos para optimizar aún más la gestión agrícola y ganadera.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+    question: "¿Cómo puedo beneficiarme de Hindra desde el principio?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+      "Desde el primer día, Hindra está diseñado para ayudar a los productores a mejorar la eficiencia y la sostenibilidad de sus operaciones, proporcionando herramientas esenciales y conocimientos que aumentan con el tiempo.",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "¿Cómo puedo acceder al soporte de IA en Hindra?",
+    answer:
+      "Hindra ofrece acceso a soporte 24/7 impulsado por IA para resolver consultas y proporcionar recomendaciones basadas en datos, garantizando así un acompañamiento constante en la mejora de sus operaciones.",
     value: "item-4",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+      "¿Cuándo estarán disponibles los nuevos planes y funcionalidades?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Estamos trabajando diligentemente para lanzar nuevos planes y características a medida que evolucionamos. Mantente atento a las actualizaciones dentro de la aplicación para conocer las últimas mejoras disponibles.",
     value: "item-5",
   },
 ];
 
 export const FAQ = () => {
   return (
-    <section
-      id="faq"
-      className="container py-24 sm:py-32"
-    >
+    <section id="faq" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Frequently Asked{" "}
+        Preguntas{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Questions
+          Frecuentes
         </span>
       </h2>
 
-      <Accordion
-        type="single"
-        collapsible
-        className="w-full AccordionRoot"
-      >
+      <Accordion type="single" collapsible className="w-full AccordionRoot">
         {FAQList.map(({ question, answer, value }: FAQProps) => (
-          <AccordionItem
-            key={value}
-            value={value}
-          >
+          <AccordionItem key={value} value={value}>
             <AccordionTrigger className="text-left">
               {question}
             </AccordionTrigger>
@@ -75,17 +66,6 @@ export const FAQ = () => {
           </AccordionItem>
         ))}
       </Accordion>
-
-      <h3 className="font-medium mt-4">
-        Still have questions?{" "}
-        <a
-          rel="noreferrer noopener"
-          href="#"
-          className="text-primary transition-all border-primary hover:border-b-2"
-        >
-          Contact us
-        </a>
-      </h3>
     </section>
   );
 };

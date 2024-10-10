@@ -30,16 +30,17 @@ const pricingList: PricingProps[] = [
     popular: 0,
     price: 0,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Plan básico con el que podrás descubrir el gran potencial de implementar la tecnología en tu rancho o finca.",
     buttonText: "Get Started",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "1 ganadería",
+      "Registro de hasta 15 animales.",
+      "Trazabilidad y registro veterinario.",
+      "Acceso al marketplace.",
+      "Manejo de tus finanzas.",
     ],
   },
+  /*
   {
     title: "Premium",
     popular: 1,
@@ -69,15 +70,12 @@ const pricingList: PricingProps[] = [
       "Priority support",
       "lorem ipsum dolor",
     ],
-  },
+  },*/
 ];
 
 export const Pricing = () => {
   return (
-    <section
-      id="pricing"
-      className="container py-24 sm:py-32"
-    >
+    <section id="pricing" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold text-center">
         Get
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
@@ -104,10 +102,7 @@ export const Pricing = () => {
               <CardTitle className="flex item-center justify-between">
                 {pricing.title}
                 {pricing.popular === PopularPlanType.YES ? (
-                  <Badge
-                    variant="secondary"
-                    className="text-sm text-primary"
-                  >
+                  <Badge variant="secondary" className="text-sm text-primary">
                     Most popular
                   </Badge>
                 ) : null}
@@ -129,10 +124,7 @@ export const Pricing = () => {
             <CardFooter className="flex">
               <div className="space-y-4">
                 {pricing.benefitList.map((benefit: string) => (
-                  <span
-                    key={benefit}
-                    className="flex"
-                  >
+                  <span key={benefit} className="flex">
                     <Check className="text-green-500" />{" "}
                     <h3 className="ml-2">{benefit}</h3>
                   </span>

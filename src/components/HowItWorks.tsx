@@ -9,55 +9,50 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    icon: <MedalIcon />,
-    title: "Accessibility",
+    icon: <GiftIcon />,
+    title: "Sostenibilidad",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Fomentamos prácticas agrícolas y ganaderas responsables que protegen nuestros recursos naturales, asegurando un futuro saludable para las próximas generaciones",
+  },
+  {
+    icon: <MedalIcon />,
+    title: "Innovación",
+    description:
+      "Integramos tecnología avanzada, como IA y análisis de datos, para optimizar la producción y la eficiencia en las operaciones, beneficiando tanto a los productores como a los consumidores",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "Comunidad",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Trabajamos en estrecha colaboración con los productores locales, ofreciendo capacitación y soporte, para fortalecer sus capacidades y mejorar sus condiciones de vida",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "Eficiencia",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
-  },
-  {
-    icon: <GiftIcon />,
-    title: "Gamification",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Nos comprometemos a generar un impacto positivo en la sociedad y el medio ambiente, promoviendo un equilibrio entre la producción y la conservación para el bienestar de todos",
   },
 ];
 
 export const HowItWorks = () => {
   return (
-    <section
-      id="howItWorks"
-      className="container text-center py-24 sm:py-32"
-    >
+    <section id="howItWorks" className="container text-center py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
+        Como{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
+          Ayudaremos{" "}
         </span>
-        Step-by-Step Guide
+        a Centro América y Latam
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Nuestra misión es impulsar el bienestar de todos. Creemos en una
+        agricultura y ganadería sostenibles que beneficien a todos, promoviendo
+        prácticas tecnológicas e innovadoras para un futuro más próspero.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {features.map(({ icon, title, description }: FeatureProps) => (
-          <Card
-            key={title}
-            className="bg-muted/50"
-          >
+          <Card key={title} className="bg-muted/50">
             <CardHeader>
               <CardTitle className="grid gap-4 place-items-center">
                 {icon}
