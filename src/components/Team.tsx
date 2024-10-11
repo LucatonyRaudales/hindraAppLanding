@@ -82,7 +82,7 @@ export const Team = () => {
         camino hacia un futuro más próspero.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div>
         {teamList.map(
           ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
             <Card

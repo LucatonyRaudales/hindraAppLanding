@@ -20,8 +20,9 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Sponsors />
+      <Newsletter /> 
       <About />
+      <Sponsors />
       <HowItWorks />
       {/* <Features /> */}
       {/* <Services /> */}
@@ -31,7 +32,6 @@ function App() {
 
       <Team />
       <Pricing />
-      <Newsletter /> 
 
       <FAQ />
       <Footer />
