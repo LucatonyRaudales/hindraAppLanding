@@ -15,7 +15,7 @@ const FAQList: FAQProps[] = [
   {
     question: "¿Qué ofrece Hindra en su MVP?",
     answer:
-      "Hindra ofrece una plataforma inicial que ayuda a gestionar ranchos ganaderos y agrícolas, proporcionando dashboards básicos y métricas clave para mejorar la producción. También ofrece soporte básico mediante IA y acceso a servicios exclusivos dentro de la aplicación.",
+      "Hindra ofrece una plataforma inicial que ayuda a gestionar ranchos ganaderos y agrícolas, proporcionando dashboards básicos y métricas clave para mejorar la producción. También ofrece un panel donde podrás registrar tus gastos e ingresos, además de tener una marketplace dentro de la app donde podrás vender tus productos",
     value: "item-1",
   },
   {
