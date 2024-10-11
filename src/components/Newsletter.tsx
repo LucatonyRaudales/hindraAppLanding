@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from "axios";
+import { useState } from "react";
 
 interface FormData {
   fullName: string;
@@ -34,30 +35,37 @@ const InputField = ({
         aria-label={label}
       />
       {errors[name] && (
-        <span className="text-red-500 text-xs">
-          {errors[name].message}
-        </span>
+        <span className="text-red-500 text-xs">{errors[name].message}</span>
       )}
     </div>
   );
 };
 
 export const Newsletter = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const {
+    reset,
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>();
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
+    setIsLoading(true);
     try {
       console.log("Submitting data:", data);
-      const response = await axios.post('/api/subscribe', data);
+      const response = await axios.post(
+        "http://localhost:8080/api/v1/pre-registrate",
+        data
+      );
       console.log("Response:", response.data);
       alert("Suscripción exitosa!");
+      reset();
     } catch (error) {
       console.error("Error al enviar los datos:", error);
-      alert("Ocurrió un error al suscribirse.");
+      alert("El correo ya está registrado o tuvimos un problema interno");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -72,7 +80,8 @@ export const Newsletter = () => {
           </span>
         </h3>
         <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Sé de los primeros en usar la aplicación para mejorar la producción y alcanzar mayores ingresos con menos trabajo.
+          Sé de los primeros en usar la aplicación para mejorar la producción y
+          alcanzar mayores ingresos con menos trabajo.
         </p>
 
         <form
@@ -108,7 +117,34 @@ export const Newsletter = () => {
             }}
             errors={errors} // Pasar errors aquí
           />
-          <Button type="submit" className="mt-4">Subscribe</Button>
+          <Button type="submit" className="mt-4" disabled={isLoading}>
+            {isLoading ? (
+              <div className="flex items-center justify-center">
+                <svg
+                  className="animate-spin h-5 w-5 mr-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 1016 0 8 8 0 00-16 0z"
+                  />
+                </svg>
+              </div>
+            ) : (
+              "Registrarme"
+            )}
+          </Button>
         </form>
       </div>
       <hr className="w-11/12 mx-auto" />
