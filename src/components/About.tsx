@@ -31,7 +31,7 @@ export const About = () => {
                 expertos listos para ayudarte a maximizar tu producción. En
                 Hindra, estamos comprometidos a ofrecer servicios únicos que se
                 adaptan a tus necesidades. ¡Pronto lanzaremos nuestra
-                plataforma! Pre-regístrate ahora y sé parte de la transformación
+                plataforma! Regístrate ahora y sé parte de la transformación
                 en la gestión agrícola y ganadera.
               </p>
             </div>

@@ -23,7 +23,7 @@ export const Cta = () => {
         </div>
 
         <div className="space-y-4 lg:col-start-2">
-          <Button className="w-full md:mr-4 md:w-auto">Pre-regístrate</Button>
+          <Button className="w-full md:mr-4 md:w-auto">Regístrate</Button>
           {/*<Button variant="outline" className="w-full md:w-auto">
             View all features
           </Button>*/}

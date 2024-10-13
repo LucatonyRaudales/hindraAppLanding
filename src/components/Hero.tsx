@@ -30,7 +30,7 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3 text-white">Pre-regístrate</Button>
+          <Button className="w-full md:w-1/3 text-white">Regístrate</Button>
         </div>
       </div>
 
