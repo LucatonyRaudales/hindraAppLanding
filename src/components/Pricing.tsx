@@ -24,7 +24,7 @@ interface PricingProps {
   benefitList: string[];
 }
 
-const pricingList: PricingProps[] = [
+export const pricingList: PricingProps[] = [
   {
     title: "Free",
     popular: 0,
@@ -77,16 +77,16 @@ export const Pricing = () => {
   return (
     <section id="pricing" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        Obtén
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          El Plán{" "}
         </span>
-        Access
+        Que Necesites
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+        Para comenzar te ofrecemos un plan gratuito, mañana te daremos nuevas
+        herramientas y planes.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (

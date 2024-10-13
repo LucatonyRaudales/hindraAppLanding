@@ -28,6 +28,10 @@ const routeList: RouteProps[] = [
     label: "Home",
   },
   {
+    href: "#register",
+    label: "Registro",
+  },
+  {
     href: "#pricing",
     label: "Precio",
   },

@@ -23,21 +23,22 @@ const InputField = ({
   name: keyof FormData;
   required?: string;
   pattern?: { value: RegExp; message: string };
-  errors: any; // Cambiar el tipo aquí si lo deseas
+  errors: any;
 }) => {
   return (
-    <div className="flex flex-col">
-      <label className="text-sm font-medium text-gray-700">{label}</label>
-      <Input
-        {...register(name, { required, pattern })}
-        placeholder={label}
-        className="bg-muted/50 dark:bg-muted/80"
-        aria-label={label}
-      />
-      {errors[name] && (
-        <span className="text-red-500 text-xs">{errors[name].message}</span>
-      )}
-    </div>
+
+      <div className="flex flex-col">
+        <label className="text-sm font-medium text-gray-700">{label}</label>
+        <Input
+          {...register(name, { required, pattern })}
+          placeholder={label}
+          className="bg-muted/50 dark:bg-muted/80"
+          aria-label={label}
+        />
+        {errors[name] && (
+          <span className="text-red-500 text-xs">{errors[name].message}</span>
+        )}
+      </div>
   );
 };
 
@@ -70,7 +71,7 @@ export const Newsletter = () => {
   };
 
   return (
-    <section id="newsletter">
+    <section id="register">
       <hr className="w-11/12 mx-auto" />
       <div className="container py-24 sm:py-32">
         <h3 className="text-center text-4xl md:text-5xl font-bold">
