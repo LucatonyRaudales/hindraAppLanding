@@ -56,7 +56,7 @@ export const Newsletter = () => {
     try {
       console.log("Submitting data:", data);
       const response = await axios.post(
-        "http://localhost:8080/api/v1/pre-registrate",
+        "https://backend-production-989a.up.railway.app/api/v1/pre-registrate",
         data
       );
       console.log("Response:", response.data);
