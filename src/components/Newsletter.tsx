@@ -26,19 +26,18 @@ const InputField = ({
   errors: any;
 }) => {
   return (
-
-      <div className="flex flex-col">
-        <label className="text-sm font-medium text-gray-700">{label}</label>
-        <Input
-          {...register(name, { required, pattern })}
-          placeholder={label}
-          className="bg-muted/50 dark:bg-muted/80"
-          aria-label={label}
-        />
-        {errors[name] && (
-          <span className="text-red-500 text-xs">{errors[name].message}</span>
-        )}
-      </div>
+    <div className="flex flex-col">
+      <label className="text-sm font-medium text-gray-700">{label}</label>
+      <Input
+        {...register(name, { required, pattern })}
+        placeholder={label}
+        className="bg-muted/50 dark:bg-muted/80"
+        aria-label={label}
+      />
+      {errors[name] && (
+        <span className="text-red-500 text-xs">{errors[name].message}</span>
+      )}
+    </div>
   );
 };
 
@@ -54,12 +53,10 @@ export const Newsletter = () => {
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     setIsLoading(true);
     try {
-      console.log("Submitting data:", data);
-      const response = await axios.post(
+      await axios.post(
         "https://backend-production-989a.up.railway.app/api/v1/pre-registrate",
         data
       );
-      console.log("Response:", response.data);
       alert("Suscripción exitosa!");
       reset();
     } catch (error) {
