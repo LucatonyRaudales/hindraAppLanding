@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Button } from './ui/button';
+import { Button } from '../components/ui/button';
 
 const VerifyEmail = () => {
   const [searchParams] = useSearchParams();

@@ -14,7 +14,11 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
 //import { Testimonials } from "./components/Testimonials";
-import VerifyEmail from "./components/VerifyEmail";
+import VerifyEmail from "./pages/VerifyEmail";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import CookiePolicy from "./pages/CookiePolicy";
+import DataProtection from "./pages/DataProtection";
 import "./App.css";
 
 function HomePage() {
@@ -47,6 +51,10 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/verify-email" element={<VerifyEmail />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-of-service" element={<TermsOfService />} />
+      <Route path="/cookie-policy" element={<CookiePolicy />} />
+      <Route path="/data-protection" element={<DataProtection />} />
     </Routes>
   );
 }
