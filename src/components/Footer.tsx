@@ -128,21 +128,6 @@ export const Footer = () => {
             </a>
           </div>
 
-          <div>
-            <span className="opacity-60">
-              Danlí, El Paraíso<br />
-              Honduras
-            </span>
-          </div>
-
-          <div>
-            <a
-              href="tel:+50432286657"
-              className="opacity-60 hover:opacity-100"
-            >
-              +504 3228-6657
-            </a>
-          </div>
         </div>
 
         <div className="flex flex-col gap-2">

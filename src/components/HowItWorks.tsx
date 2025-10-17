@@ -39,7 +39,7 @@ export const HowItWorks = () => {
     <section id="howItWorks" className="container text-center py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold ">
         Como{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 text-transparent bg-clip-text">
           Ayudaremos{" "}
         </span>
         a Centro América y Latam

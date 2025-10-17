@@ -14,25 +14,20 @@ export const About = () => {
           <div className="bg-green-0 flex flex-col justify-between">
             <div className="pb-6">
               <h2 className="text-3xl md:text-4xl font-bold">
-                <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+                <span className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 text-transparent bg-clip-text">
                   Sobre{" "}
                 </span>
                 Nosotros
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Bienvenido a Valley, la plataforma revolucionaria diseñada para
-                transformar la gestión de ranchos y fincas. Nos dedicamos a
-                empoderar a agricultores y ganaderos con herramientas avanzadas
-                que integran inteligencia artificial, análisis de datos y
-                tecnología innovadora. Con un dashboard intuitivo y métricas
-                personalizadas, brindamos información esencial para facilitar la
-                toma de decisiones estratégicas. Nuestro soporte está disponible
-                24/7, combinando tecnología de vanguardia con un equipo de
-                expertos listos para ayudarte a maximizar tu producción. En
-                Valley, estamos comprometidos a ofrecer servicios únicos que se
-                adaptan a tus necesidades. ¡Pronto lanzaremos nuestra
-                plataforma! Regístrate ahora y sé parte de la transformación
-                en la gestión agrícola y ganadera.
+                Valley es tu asistente digital especializado en ganadería. Diseñada 
+                específicamente para ganaderos y agricultores que quieren modernizar 
+                su negocio, Valley te ayuda a organizar todo lo relacionado con tu ganado. 
+                Registra tus animales con fotos y datos completos, lleva el control 
+                financiero de tu negocio, y vende directamente desde tu teléfono. 
+                Con nuestro marketplace integrado, puedes comprar y vender ganado 
+                sin intermediarios, mientras nuestro asistente inteligente te brinda 
+                consejos especializados. ¡Ya disponible en iOS y Android!
               </p>
             </div>
 

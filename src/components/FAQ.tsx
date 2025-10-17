@@ -13,35 +13,46 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "¿Qué ofrece Valley en su MVP?",
+    question: "¿Qué funcionalidades incluye el MVP de Valley?",
     answer:
-      "Valley ofrece una plataforma inicial que ayuda a gestionar ranchos ganaderos y agrícolas, proporcionando dashboards básicos y métricas clave para mejorar la producción. También ofrece un panel donde podrás registrar tus gastos e ingresos, además de tener una marketplace dentro de la app donde podrás vender tus productos",
+      "Nuestro MVP incluye gestión completa de ganado (registro con fotos, control de peso, historial de salud), control financiero (ingresos, gastos categorizados, resúmenes mensuales), marketplace integrado para compra y venta directa, y un asistente inteligente para consultas sobre ganadería.",
     value: "item-1",
   },
   {
-    question: "¿Cuáles son los planes futuros de Valley?",
+    question: "¿En qué dispositivos funciona Valley?",
     answer:
-      "Estamos comprometidos a expandir nuestras funcionalidades a medida que crecemos, agregando herramientas avanzadas de IA, machine learning y análisis de datos para optimizar aún más la gestión agrícola y ganadera.",
+      "Valley está disponible para iOS y Android. La aplicación funciona incluso sin internet para consultar datos guardados, y se sincroniza automáticamente cuando hay conexión.",
     value: "item-2",
   },
   {
-    question: "¿Cómo puedo beneficiarme de Valley desde el principio?",
+    question: "¿Cómo funciona el marketplace de Valley?",
     answer:
-      "Desde el primer día, Valley está diseñado para ayudar a los productores a mejorar la eficiencia y la sostenibilidad de sus operaciones, proporcionando herramientas esenciales y conocimientos que aumentan con el tiempo.",
+      "Puedes vender tus animales directamente desde la app, buscar y comprar ganado de otros productores, hacer ofertas, contactar directamente con vendedores y mantener un historial completo de tus compras y ventas.",
     value: "item-3",
   },
   {
-    question: "¿Cómo puedo acceder al soporte de IA en Valley?",
+    question: "¿Valley funciona sin internet?",
     answer:
-      "Valley ofrece acceso a soporte 24/7 impulsado por IA para resolver consultas y proporcionar recomendaciones basadas en datos, garantizando así un acompañamiento constante en la mejora de sus operaciones.",
+      "Sí, Valley funciona sin internet para consultar datos guardados. Cuando tengas conexión, la app se sincroniza automáticamente para mantener tus datos actualizados.",
     value: "item-4",
   },
   {
-    question:
-      "¿Cuándo estarán disponibles los nuevos planes y funcionalidades?",
+    question: "¿Cómo registro mi ganado en Valley?",
     answer:
-      "Estamos trabajando diligentemente para lanzar nuevos planes y características a medida que evolucionamos. Mantente atento a las actualizaciones dentro de la aplicación para conocer las últimas mejoras disponibles.",
+      "Es muy fácil: toma una foto de cada animal, registra su fecha de nacimiento, raza, género y ubicación. Puedes agregar información adicional como peso, tratamientos médicos y marcar si está en venta.",
     value: "item-5",
+  },
+  {
+    question: "¿Valley es seguro para mis datos?",
+    answer:
+      "Sí, Valley protege todos tus datos con encriptación y respaldo automático. Tu información está segura y solo tú tienes acceso a ella. Puedes consultar nuestra Política de Privacidad para más detalles.",
+    value: "item-6",
+  },
+  {
+    question: "¿Cuánto cuesta usar Valley?",
+    answer:
+      "Valley está disponible de forma gratuita en su versión MVP. Estamos enfocados en que los ganaderos puedan probar y beneficiarse de la aplicación. Mantente atento a futuras actualizaciones sobre planes premium.",
+    value: "item-7",
   },
 ];
 
@@ -50,7 +61,7 @@ export const FAQ = () => {
     <section id="faq" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
         Preguntas{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 text-transparent bg-clip-text">
           Frecuentes
         </span>
       </h2>
