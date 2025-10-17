@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import { About } from "./components/About";
 import { Cta } from "./components/Cta";
 import { FAQ } from "./components/FAQ";
@@ -13,11 +14,12 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
 //import { Testimonials } from "./components/Testimonials";
+import VerifyEmail from "./components/VerifyEmail";
 import "./App.css";
 
-function App() {
+function HomePage() {
   return (
-    <>
+    <div>
       <Navbar />
       <Hero />
       <Newsletter /> 
@@ -36,7 +38,16 @@ function App() {
       <FAQ />
       <Footer />
       <ScrollToTop />
-    </>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/verify-email" element={<VerifyEmail />} />
+    </Routes>
   );
 }
 
