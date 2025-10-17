@@ -20,7 +20,7 @@ export const About = () => {
                 Nosotros
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Bienvenido a Hindra, la plataforma revolucionaria diseñada para
+                Bienvenido a Valley, la plataforma revolucionaria diseñada para
                 transformar la gestión de ranchos y fincas. Nos dedicamos a
                 empoderar a agricultores y ganaderos con herramientas avanzadas
                 que integran inteligencia artificial, análisis de datos y
@@ -29,7 +29,7 @@ export const About = () => {
                 toma de decisiones estratégicas. Nuestro soporte está disponible
                 24/7, combinando tecnología de vanguardia con un equipo de
                 expertos listos para ayudarte a maximizar tu producción. En
-                Hindra, estamos comprometidos a ofrecer servicios únicos que se
+                Valley, estamos comprometidos a ofrecer servicios únicos que se
                 adaptan a tus necesidades. ¡Pronto lanzaremos nuestra
                 plataforma! Regístrate ahora y sé parte de la transformación
                 en la gestión agrícola y ganadera.

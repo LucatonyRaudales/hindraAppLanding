@@ -77,7 +77,7 @@ export const Team = () => {
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Te invitamos a conocer a las personas detrás de Hindra, quienes están
+        Te invitamos a conocer a las personas detrás de Valley, quienes están
         dedicados a hacer de tu experiencia algo excepcional y a guiarte en el
         camino hacia un futuro más próspero.
       </p>

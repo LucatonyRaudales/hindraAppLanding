@@ -120,7 +120,7 @@ export const HeroCards = () => {
             <LightBulbIcon />
           </div>
           <div>
-            <CardTitle>Hindra como solución</CardTitle>
+            <CardTitle>Valley como solución</CardTitle>
             <CardDescription className="text-md mt-2">
               Nuestra tecnología te ayudará a resolver tus problemas del día a
               día.

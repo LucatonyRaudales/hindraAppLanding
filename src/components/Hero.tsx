@@ -8,7 +8,7 @@ export const Hero = () => {
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
             <span className="inline bg-gradient-to-r from-[#f59696]  to-[#d24747] text-transparent bg-clip-text">
-              Hindra
+              Valley
             </span>{" "}
             La plataforma
           </h1>{" "}
@@ -25,7 +25,7 @@ export const Hero = () => {
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Hindra revoluciona la gestión agrícola y ganadera con IA, datos
+          Valley revoluciona la gestión agrícola y ganadera con IA, datos
           inteligentes y tecnología de talla mundial.
         </p>
 
